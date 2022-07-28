@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 60px 30px;
+      }
+      .read-more {
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #83c5be;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .read-more:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: normal;
+        color: #006d77;
+      }
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 10px;
+        color: #006d77;
+        border: 2px solid #006d77;
+        border-radius: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #006d77;
+        line-height: 1.5;
+      }
+      footer {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        padding: 10px;
+        color: #006d77;
+      }
+      body {
+        background: #edf6f9;
+      }
+      button {
+        display: block;
+        margin: 25px auto;
+        background: #006d77;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        color: #edf6f9;
+        border: #006d77;
+        border-radius: 25px;
+        transition: all 200ms ease-in-out;
+        font-size: 24px;
+        padding: 20px 30px;
+      }
+      button:hover {
+        cursor: pointer;
+        color: #006d77;
+        background: #83c5be;
+      }
+    </style>
+    <title>🧶Knitting Lessons</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Knitting Lessons</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/051/original/PXL_20210919_074420624.jpg?1652296881"
+        alt="KnittedSocks"
+        width="400"
+      />
+      <h2>What is knitting</h2>
+      <p>
+        <strong>Knitting</strong> is a method by which yarn is manipulated to
+        create a textile, or fabric. It is used to create many types of
+        garments. Knitting may be done by hand or by machine. Knitting creates
+        stitches: loops of yarn in a row, either flat or in the round (tubular)
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Knitting"
+        target="_blank"
+        class="read-more"
+      >
+        Learn more about knitting styles, types, instruments and materials
+      </a>
+      <h2>Health benefits from knitting</h2>
+      <p>
+        Studies have shown that hand knitting, along with other forms of
+        needlework, provide several significant health benefits. These studies
+        have found the rhythmic and repetitive action of hand knitting can help
+        prevent and manage stress, pain and depression, which in turn
+        strengthens the body's immune system, as well as create a relaxation
+        response in the body which can decrease blood pressure, heart rate, help
+        prevent illness, and have a calming effect.
+        <br />
+      </p>
+      <a
+        href="https://mhanational.org/blog/mental-health-benefits-knitting"
+        target="_blank"
+        class="read-more"
+      >
+        Read more about how knitting can improve your life
+      </a>
+      <button class="apply-button">🧶 Apply for classes now</button>
+      <footer>
+        Opens-source code by Lisa Bondarenko
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/020/original/IMG_0488.PNG?1652276066"
+          alt="KnitAndPurlLogo"
+          width="50"
+        />
+      </footer>
+    </div>
+    <script>
+      function apply() {
+        let name = prompt("What is your name?");
+        let lastName = prompt("What is your last name?");
+        let hand = prompt(
+          "Are you lefthanded or righthanded? We need to know this in order to set for you an appropriate method of teaching 😊"
+        );
+        let email = prompt("What is your email address?");
+        alert(
+          "Great, " +
+            name +
+            " " +
+            lastName +
+            "! " +
+            "We will contact you on " +
+            email +
+            " shortly"
+        );
+      }
+      let applyButton = document.querySelector(".apply-button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
